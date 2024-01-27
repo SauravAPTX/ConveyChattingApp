@@ -1,11 +1,11 @@
-import { Icon, Icons } from '@/components/Icons'
+import { Icons } from '@/components/Icons'
 import SignOutButton from '@/components/SignOutButton'
 import { authOptions } from '@/lib/auth'
 import { getServerSession } from 'next-auth'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { FC, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import FriendRequestSidebarOptions from '@/components/FriendRequestSidebarOptions'
 import { fetchRedis } from '@/helpers/redis'
 import { getFriendsByUserId } from '@/helpers/get-friends-by-user-id'
@@ -17,7 +17,6 @@ interface LayoutProps {
   children: ReactNode
 }
 
-// Done after the video and optional: add page metadata
 export const metadata = {
   title: 'FriendZone | Dashboard',
   description: 'Your dashboard',
