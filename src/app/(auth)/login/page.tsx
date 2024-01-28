@@ -4,9 +4,10 @@ import Button from '@/components/ui/Button'
 import { FC, useState } from 'react'
 import { signIn } from 'next-auth/react'
 import { toast } from 'react-hot-toast'
+import Navbar from '@/components/NavBar'
 
 const Page: FC = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   async function loginWithGoogle() {
     setIsLoading(true)
@@ -21,10 +22,12 @@ const Page: FC = () => {
 
   return (
     <>
+    <Navbar/>
+    
+    <div>
       <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8' >
         <div className='w-full flex flex-col items-center max-w-md space-y-8 bg-gray-500 p-4'>
           <div className='flex flex-col items-center gap-8'>
-            logo
             <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
               Sign in to your account
             </h2>
@@ -67,7 +70,23 @@ const Page: FC = () => {
             Google
           </Button>
         </div>
-        <div className='flex-row'>hello how are you</div>
+        
+      </div>
+      <div className='flex flex-col items-center justify-center py-8 px-4 sm:px-6 lg:px-8'>
+        <h2 className='text-2xl font-bold mb-4'>App Previews</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+          {/* Replace the following placeholders with your actual preview components */}
+          <div className='bg-white p-4 rounded-lg shadow-md'>
+            {/* Your first app preview component */}
+          </div>
+          <div className='bg-white p-4 rounded-lg shadow-md'>
+            {/* Your second app preview component */}
+          </div>
+          <div className='bg-white p-4 rounded-lg shadow-md'>
+            {/* Your third app preview component */}
+          </div>
+        </div>
+      </div>
       </div>
     </>
   )
