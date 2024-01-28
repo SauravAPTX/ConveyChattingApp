@@ -25,18 +25,27 @@ const Page: FC = () => {
     <Navbar/>
     
     <div>
-      <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8' >
-        <div className='w-full flex flex-col items-center max-w-md space-y-8 bg-gray-500 p-4'>
-          <div className='flex flex-col items-center gap-8'>
-            <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
-              Sign in to your account
-            </h2>
+    <div className='bg-purple-300 h-96 flex flex-row items-center justify-center'>
+    <h1 className='leading-tight text-4xl font-bold text-white whitespace-pre-line'>Secure Connections,{'\n'} Confident Conversations</h1>
+    <div className="mt-4">
+      <img
+        className="rounded-md shadow-md object-cover h-52 w-full"
+        src="https://assets.materialup.com/uploads/aa245a68-c462-49eb-b56e-e2cceca86455/chatmessagesiosandroiduikittemplate.jpg"
+        alt="Description of the image"
+      />
+    </div>
+  </div>
+  <div className='flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 '>
+    <div className='w-full flex flex-col items-center max-w-md space-y-8 bg-purple-300 p-4'>
+      <div className='flex flex-col items-center gap-8'>
+        <h2 className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900'>
+          Sign in to your account
+        </h2>
           </div>
-
           <Button
             isLoading={isLoading}
             type='button'
-            className='max-w-sm mx-auto w-full'
+            className='block bg-purple-600 text-white  leading-tight py-2 px-4 w-full rounded-md mt-6 flex items-center justify-center'
             onClick={loginWithGoogle}>
             {isLoading ? null : (
               <svg
@@ -73,32 +82,32 @@ const Page: FC = () => {
         
       </div>
       <div className='flex flex-col items-center justify-center py-8 px-4 sm:px-6 lg:px-8'>
-        <h2 className='text-2xl font-bold mb-4'>App Previews</h2>
-        <div className=' grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-          <div className='bg-white p-4 rounded-lg shadow-md'>
-          <img
+    <h2 className='text-2xl font-bold mb-4'>App Previews</h2>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='bg-white p-4 rounded-lg shadow-md'>
+        <img
           className="w-full h-full object-cover"
           src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
           alt="Description of the image"
-          />
-          </div>
-          <div className='bg-white p-4 rounded-lg shadow-md'>
-          <img
-          className="w-full h-full object-cover"
-          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
-          alt="Description of the image"
-          />
-          </div>
-          <div className='bg-white p-4 rounded-lg shadow-md'>
-          <img
-          className="w-full h-full object-cover"
-          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
-          alt="Description of the image"
-          />
-          </div>
-        </div>
+        />
       </div>
+      <div className='bg-white p-4 rounded-lg shadow-md'>
+        <img
+          className="w-full h-full object-cover"
+          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
+          alt="Description of the image"
+        />
       </div>
+      <div className='bg-white p-4 rounded-lg shadow-md'>
+        <img
+          className="w-full h-full object-cover"
+          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
+          alt="Description of the image"
+        />
+      </div>
+    </div>
+  </div>
+</div>
     </>
   )
 }
