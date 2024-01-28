@@ -2,6 +2,7 @@ import Providers from '@/components/Providers'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import {Space_Grotesk} from 'next/font/google'
+import Navbar from '@/components/NavBar'
 
 export const metadata = {
   title: 'Convey | Home',
@@ -22,7 +23,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
           enableSystem
-          disableTransitionOnChange> 
+          disableTransitionOnChange>
         <Providers>{children}</Providers>
         </ThemeProvider>
       </body>
