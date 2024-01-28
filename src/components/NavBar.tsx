@@ -6,7 +6,7 @@ import { Menu, Search } from "lucide-react"
 
 export default function Navbar() {
   const [state, setState] = React.useState(false)
-  const loginSectionRef = React.useRef(null);
+  const loginSectionRef = React.useRef<HTMLDivElement | null>(null);
 
   const menus = [
     { title: "Features", path: "/features" },
