@@ -74,16 +74,27 @@ const Page: FC = () => {
       </div>
       <div className='flex flex-col items-center justify-center py-8 px-4 sm:px-6 lg:px-8'>
         <h2 className='text-2xl font-bold mb-4'>App Previews</h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-          {/* Replace the following placeholders with your actual preview components */}
+        <div className=' grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           <div className='bg-white p-4 rounded-lg shadow-md'>
-            {/* Your first app preview component */}
+          <img
+          className="w-full h-full object-cover"
+          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
+          alt="Description of the image"
+          />
           </div>
           <div className='bg-white p-4 rounded-lg shadow-md'>
-            {/* Your second app preview component */}
+          <img
+          className="w-full h-full object-cover"
+          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
+          alt="Description of the image"
+          />
           </div>
           <div className='bg-white p-4 rounded-lg shadow-md'>
-            {/* Your third app preview component */}
+          <img
+          className="w-full h-full object-cover"
+          src="https://s3-alpha.figma.com/hub/file/1630463834/71cd3eb9-a0c1-4d7f-9701-76de6b1d7cb5-cover.png"
+          alt="Description of the image"
+          />
           </div>
         </div>
       </div>
