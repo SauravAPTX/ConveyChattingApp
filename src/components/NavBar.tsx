@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { ThemeModeToggle } from "./themeModeToggle";
@@ -27,7 +27,7 @@ export default function Navbar() {
   };
 
   const { theme } = useTheme();
-  const navbarColor = theme === "dark" ? "bg-black" : "bg-white";
+  const navbarColor = theme === "light" ? "bg-white" : "bg-black";
   const navbarOpacity = isMenuOpen===false ? "opacity-70" : "opacity-100";
 
   return (<ThemeProvider 
